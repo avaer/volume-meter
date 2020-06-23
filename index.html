@@ -203,9 +203,8 @@ const _enable = async () => {
     track = null;
     microphoneWorker.close();
     microphoneWorker = null;
-    setTimeout(() => {
-      volume = 0;
-    });
+    volume = 0;
+    _enable();
   });
 };
 _enable();
